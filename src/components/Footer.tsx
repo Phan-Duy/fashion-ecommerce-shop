@@ -9,6 +9,7 @@ const Footer = () => {
         {/* LEFT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <Link href="/">
+            <Image src="/logo.png" alt="Logo" width={50} height={50} />
             <div className="text-2xl tracking-wide">DSHOP</div>
           </Link>
           <p>
@@ -20,7 +21,6 @@ const Footer = () => {
             <Image src="/facebook.png" alt="" width={16} height={16} />
             <Image src="/instagram.png" alt="" width={16} height={16} />
             <Image src="/youtube.png" alt="" width={16} height={16} />
-            <Image src="/pinterest.png" alt="" width={16} height={16} />
             <Image src="/x.png" alt="" width={16} height={16} />
           </div>
         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="flex flex-col gap-6">
               <Link href="">About Us</Link>
               <Link href="">Careers</Link>
-              <Link href="">Affiliates</Link>
+              <Link href="">Payment</Link>
               <Link href="">Blog</Link>
               <Link href="">Contact Us</Link>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
               <Link href="">Customer Service</Link>
               <Link href="">My Account</Link>
               <Link href="">Find a Store</Link>
-              <Link href="">Legal & Privacy</Link>
+              <Link href="">Policy</Link>
               <Link href="">Gift Card</Link>
             </div>
           </div>
@@ -60,10 +60,6 @@ const Footer = () => {
         {/* RIGHT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <h1 className="font-medium text-lg">SUBSCRIBE</h1>
-          <p>
-            Be the first to get the latest news about trends, promotions, and
-            much more!
-          </p>
           <div className="flex">
             <input
               type="text"
@@ -74,10 +70,9 @@ const Footer = () => {
           </div>
           <span className="font-semibold">Secure Payments</span>
           <div className="flex justify-between">
-            <Image src="/discover.png" alt="" width={40} height={20} />
-            <Image src="/skrill.png" alt="" width={40} height={20} />
-            <Image src="/paypal.png" alt="" width={40} height={20} />
-            <Image src="/mastercard.png" alt="" width={40} height={20} />
+            <Image src="/assets/discover.png" alt="" width={40} height={20} />
+            <Image src="/assets/paypal.png" alt="" width={40} height={20} />
+            <Image src="/assets/mastercard.png" alt="" width={40} height={20} />
             <Image src="/visa.png" alt="" width={40} height={20} />
           </div>
         </div>
@@ -101,3 +96,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

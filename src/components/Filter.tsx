@@ -11,6 +11,8 @@ const Filter = () => {
     e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>
   ) => {
     const { name, value } = e.target;
+    if (!value || value === "Type" || value === "Sort By") return;
+
     const params = new URLSearchParams(searchParams);
     params.set(name, value);
     replace(`${pathname}?${params.toString()}`);
@@ -80,3 +82,4 @@ const Filter = () => {
 };
 
 export default Filter;
+
